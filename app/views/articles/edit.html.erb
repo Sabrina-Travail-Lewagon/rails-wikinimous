@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h1>Editer un article</h1>
+          <%= form_with model: @article, class: "New_article"  do |f| %>
+          <div class="mb-3">
+            <%= f.label :titre, class: "form-label required" %>
+            <%= f.text_field :title, class: "form-control" %>
+          </div>
+          <div class="mb-3">
+            <%= f.label :content, class: "form-label required" %>
+            <%= f.text_area :content, :cols => 30, :rows => 10, class: "form-control" %>
+          </div>
+          <%= f.submit %>
+          <% end %>
+          <%= link_to 'Voir', article_path(@article) %> | <%= link_to 'Retour', articles_path %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="article">
+        <h1><%= @article.title %>
+          <%= link_to article_edit_path do %>
+            <i class="fa-solid fa-pen-to-square"></i>
+          <% end %>
+          <%= link_to article_path(@article),
+            data: {turbo_method: :delete, turbo_confirm: "Etes vous sure ?", :method=>'delete'} do %>
+            <i class="fa-solid fa-trash-can"></i>
+          <% end %>
+        </h1>
+      </div>
+      <hr>
+      <p><%= @article.content %>
+      </p>
+    </div>
+  </div>
+</div>
