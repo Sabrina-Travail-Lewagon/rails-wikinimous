@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+
+ .navbar{
+  margin-bottom: 20px;
+}
+
+ .article {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 120%;
+}
+
+.article a {
+ color:#337ab7;
+ text-decoration:none;
+}
+.article a:hover,
+.article a:focus {
+ color:#23527c;
+ text-decoration:underline;
+}
+.article a:focus {
+ outline:5px auto -webkit-focus-ring-color;
+ outline-offset:-2px;
+}
+
+p.retour{
+  margin-top: 20px;
+}

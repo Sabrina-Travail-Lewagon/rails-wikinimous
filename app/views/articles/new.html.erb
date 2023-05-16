@@ -1,5 +1,4 @@
-<div class="container">
-  <div class="row">
+  <div class="row justify-content-center">
     <div class="col-sm-8 col-sm-offset-2">
       <h1>Ajouter un article</h1>
           <%= form_with model: @article, class: "New_article"  do |f| %>
@@ -13,6 +12,7 @@
           </div>
           <%= f.submit %>
           <% end %>
+          <p class="retour"><%= link_to 'Retour', articles_path %></p>
     </div>
+
   </div>
-</div>
